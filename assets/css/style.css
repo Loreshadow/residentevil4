@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/static/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../fonts/Roboto/static/Roboto-Bold.ttf);
+}
+
+/* CSS General */
+
+body {
+    font-family: "Roboto";
+    margin: 0px;
+}
+
+h1, h2 {
+    font-family: "Roboto Bold";
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2  { 
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: "Roboto";
+    text-align: center;
+    margin: 25px;
+}
+
+.cta {
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+}
+
+.cta--primary {
+    border-left: 1px solid black;
+    padding: 5px;
+}
+
+.accueil {
+    border-left: none;   
+}
+
+/* Header  */
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+/* section banner  */
+
+#banner {
+    background-image: url(../img/banner.jpg);
+    color: white;
+    padding: 5%;
+}
+
+#logo {
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 50%;
+    height: auto;
+}
+
+/* section presentation  */
+
+#presentation {
+    text-align: center;
+}
+
+.cta--secondary {
+    background-color: rgb(201, 2, 2);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+}
+
+/* section news  */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.card {
+    height: 400px;
+    width: 30%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container {
+    
+}
