@@ -9,7 +9,6 @@
 }
 
 /* CSS General */
-
 body {
     font-family: "Roboto";
     margin: 0px;
@@ -33,22 +32,18 @@ p {
 
 .cta {
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: "Roboto";
-    font-size: 1.5rem;
 }
 
 .cta--primary {
     border-left: 1px solid black;
+    color: black;
     padding: 5px;
-}
-
-.accueil {
-    border-left: none;   
+    font-size: 1.5rem;
 }
 
 /* Header  */
-
 header {
     display: flex;
     justify-content: center;
@@ -62,7 +57,6 @@ ul {
 }
 
 /* section banner  */
-
 #banner {
     background-image: url(../img/banner.jpg);
     color: white;
@@ -80,20 +74,21 @@ ul {
 }
 
 /* section presentation  */
-
 #presentation {
     text-align: center;
 }
 
 .cta--secondary {
     background-color: rgb(201, 2, 2);
-    color: white;
     border-radius: 5px;
     padding: 10px 25px 10px 25px;
 }
 
-/* section news  */
+.cta--secondary:hover {
+    background-color: rgb(176, 0, 0);
+}
 
+/* section news  */
 .cards {
     display: flex;
     justify-content: center;
@@ -120,7 +115,6 @@ ul {
 }
 
 /* section formulaire  */
-
 #form {
     background-color: rgb(62, 60, 60);
     color: white;
@@ -140,8 +134,12 @@ input {
 }
 
 .cta--form {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     border-radius: 5px;
+}
+
+.cta--form:hover {
+    background-color: rgba(255, 0, 0, 0.92);
 }
 
 /* footer  */
@@ -154,8 +152,11 @@ footer {
 
 .cta--tertiary {
     border-left: 1px solid white;
-    color: white;
-    font-size: 1rem;
+    padding: 5px;
+}
+
+.accueil, .mentions{
+    border: none;   
 }
 
 .logo-footer  {
