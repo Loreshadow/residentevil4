@@ -18,29 +18,46 @@ h1, h2 {
     font-family: "Roboto Bold";
     font-size: 3rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 h2  { 
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Roboto Bold';
+    margin: 25px;
 }
 
 p {
     font-family: "Roboto";
-    text-align: center;
+    text-align: left;
     margin: 25px;
 }
 
-.cta {
+a {
     text-decoration: none;
     color: white;
     font-family: "Roboto";
 }
 
-.cta--primary {
-    border-left: 1px solid black;
+.menu-item {
     color: black;
-    padding: 5px;
+    padding-left: 5px;
     font-size: 1.5rem;
+}
+
+.menu-item::before, .menu-items::before {
+    content: "| ";
+}
+
+.accueil::before, .mentions::before {
+    content: none;
+}
+
+.menu-item:hover {
+    color: rgba(0, 0, 0, 0.676);
 }
 
 /* Header  */
@@ -74,8 +91,15 @@ ul {
 }
 
 /* section presentation  */
-#presentation {
+#presentations {
     text-align: center;
+}
+
+.presentation {
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .cta--secondary {
@@ -89,6 +113,9 @@ ul {
 }
 
 /* section news  */
+#news {
+    margin: 75px;
+}
 .cards {
     display: flex;
     justify-content: center;
@@ -102,6 +129,10 @@ ul {
     background-color: rgb(62, 60, 60);
     color: white;
     margin-bottom: 50px;
+}
+
+.card:hover {
+    box-shadow: 1px 2px 7px 6px rgba(0, 0, 0, 0.43);
 }
 
 .img-container {
@@ -150,9 +181,12 @@ footer {
     justify-content: space-around;
 }
 
-.cta--tertiary {
-    border-left: 1px solid white;
+.menu-items {
     padding: 5px;
+}
+
+.menu-items:hover {
+    color: rgba(255, 255, 255, 0.847);
 }
 
 .accueil, .mentions{
