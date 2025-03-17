@@ -48,13 +48,23 @@ a {
     font-size: 1.5rem;
 }
 
-.menu-item::before, .menu-items::before {
+.menu-item::before {
     content: "";
     display: inline-block;
     width: 3px;
     height: 17px;
     margin-right: 15px;
     background-color: black;
+}
+
+.menu-items::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 17px;
+    margin-right: 15px;
+    background-color: white;
+
 }
 
 .accueil::before, .mentions::before {
