@@ -78,6 +78,7 @@ ul {
     background-image: url(../img/banner.jpg);
     color: white;
     padding: 5%;
+    margin-bottom: 5%;
 }
 .logo-container {
     display: flex;
