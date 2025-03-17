@@ -49,7 +49,12 @@ a {
 }
 
 .menu-item::before, .menu-items::before {
-    content: "| ";
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 17px;
+    margin-right: 15px;
+    background-color: black;
 }
 
 .accueil::before, .mentions::before {
