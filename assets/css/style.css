@@ -68,12 +68,15 @@ ul {
     color: white;
     padding: 5%;
 }
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #logo {
-    margin-left: 50%;
-    transform: translate(-50%);
     width: 50%;
-    height: auto;
 }
 
 /* section presentation  */
@@ -103,6 +106,7 @@ ul {
     height: 500px;
     background-color: rgb(62, 60, 60);
     color: white;
+    margin-bottom: 50px;
 }
 
 .img-container {
@@ -113,4 +117,17 @@ ul {
 .img-card {
     max-height: 100%;
     width: 100%;
+}
+
+/* section formulaire  */
+
+#form {
+    background-color: rgb(62, 60, 60);
+    color: white;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
 }
