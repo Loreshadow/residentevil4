@@ -143,3 +143,27 @@ input {
     background-color: red;
     border-radius: 5px;
 }
+
+/* footer  */
+footer {
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cta--tertiary {
+    border-left: 1px solid white;
+    color: white;
+    font-size: 1rem;
+}
+
+.logo-footer  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 100px;
+}
