@@ -211,13 +211,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    header {
-        justify-content: center;
-    }
-
-    #presentations {
-        width: 100%;
-    }
 
     .cards {
         flex-direction: column;
@@ -228,20 +221,5 @@ footer {
 
     .card {
         width: 85%;
-    }
-    footer {
-        justify-content: flex-end;
-    }
-    .menu-bot-container {
-        font-size: 0.8rem;
-        padding: 0px;
-        margin: 0px;
-    }
-    .menu-bot-container > :not(:first-child)::before{
-        content: "";
-        display: inline-block;
-        width: 3px;
-        height: 10px;
-        background-color: white;
     }
 }
