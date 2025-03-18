@@ -104,7 +104,8 @@ ul {
 }
 
 .presentation {
-    margin: 0 auto 50px auto;
+    margin: 0 auto;
+    margin-bottom: 25px;
     width: 60%;
     text-align: center;
 }
@@ -206,5 +207,41 @@ footer {
 }
 
 .logo {
-    width: 100px;
+    width: 6.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    #presentations {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30;
+    }
+
+    .card {
+        width: 85%;
+    }
+    footer {
+        justify-content: flex-end;
+    }
+    .menu-bot-container {
+        font-size: 0.8rem;
+        padding: 0px;
+        margin: 0px;
+    }
+    .menu-bot-container > :not(:first-child)::before{
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 10px;
+        background-color: white;
+    }
 }
