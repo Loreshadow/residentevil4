@@ -47,7 +47,7 @@ a {
     font-size: 1.5rem;
 }
 
-.menu-top-item:before{
+.menu-top-container > :not(:first-child)::before{
     content: "";
     display: inline-block;
     width: 3px;
@@ -56,7 +56,7 @@ a {
     background-color: black;
 }
 
-.menu-bot-item::before {
+.menu-bot-container > :not(:first-child)::before{
     content: "";
     display: inline-block;
     width: 3px;
