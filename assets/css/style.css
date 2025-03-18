@@ -14,11 +14,13 @@ body {
     margin: 0px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "Roboto Bold";
-    font-size: 3rem;
-    text-align: center;
     text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 h2  { 
@@ -26,12 +28,10 @@ h2  {
 }
 
 h3 {
-    font-family: 'Roboto Bold';
     margin: 25px;
 }
 
 p {
-    font-family: "Roboto";
     text-align: left;
     margin: 25px;
 }
@@ -39,16 +39,15 @@ p {
 a {
     text-decoration: none;
     color: white;
-    font-family: "Roboto";
 }
 
-.menu-item {
+.menu-top-item {
     color: black;
     padding-left: 5px;
     font-size: 1.5rem;
 }
 
-.menu-item::before {
+.menu-top-item:before{
     content: "";
     display: inline-block;
     width: 3px;
@@ -57,7 +56,7 @@ a {
     background-color: black;
 }
 
-.menu-items::before {
+.menu-bot-item::before {
     content: "";
     display: inline-block;
     width: 3px;
@@ -67,9 +66,6 @@ a {
 
 }
 
-.accueil::before, .mentions::before {
-    content: none;
-}
 
 .menu-item:hover {
     color: rgba(0, 0, 0, 0.676);
@@ -94,6 +90,7 @@ ul {
     color: white;
     padding: 5%;
     margin-bottom: 5%;
+    text-align: center;
 }
 .logo-container {
     display: flex;
@@ -112,7 +109,7 @@ ul {
 }
 
 .presentation {
-    margin-left: 25%;
+    margin: 0px auto;
     width: 60%;
     text-align: center;
     margin-bottom: 50px;
@@ -131,6 +128,7 @@ ul {
 /* section news  */
 #news {
     margin: 75px;
+    text-align: center;
 }
 .cards {
     display: flex;
@@ -140,8 +138,7 @@ ul {
 }
 
 .card {
-    width: 450px;
-    height: 500px;
+    width: 20%;
     background-color: rgb(62, 60, 60);
     color: white;
     margin-bottom: 40px;
@@ -166,6 +163,7 @@ ul {
     background-color: rgb(62, 60, 60);
     color: white;
     padding: 10px;
+    text-align: center;
 }
 
 form {
@@ -197,16 +195,12 @@ footer {
     justify-content: space-around;
 }
 
-.menu-items {
+.menu-bot-item {
     padding: 5px;
 }
 
-.menu-items:hover {
+.menu-bot-item:hover {
     color: rgba(255, 255, 255, 0.847);
-}
-
-.accueil, .mentions{
-    border: none;   
 }
 
 .logo-footer  {
