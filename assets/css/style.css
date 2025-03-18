@@ -237,3 +237,23 @@ footer {
         content: none;
     }
 }
+
+@media screen and (max-width: 375px) {
+    .menu-top-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .menu-top-container >:not(:first-child)::before {
+        content: none;
+    }
+    }
