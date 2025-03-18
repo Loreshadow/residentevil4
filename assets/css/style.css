@@ -76,6 +76,7 @@ header {
 ul {
     display: flex;
     gap: 10px;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -221,5 +222,18 @@ footer {
 
     .card {
         width: 85%;
+    }
+    .logo {
+        width: 8rem;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .menu-bot-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-bot-container >:not(:first-child)::before {
+        content: none;
     }
 }
